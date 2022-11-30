@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.zoomMover_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 375px;
+  overflow: hidden;
+  position: relative;
+  width: 499px;
+  height: 582px;
+}
+
+.grid_pattern {
+  height: 20%;
+  width: 20%;
+}
+.grid_pattern:hover ~ img {
+  height: 150%;
+  width: 150%;
+}
+.grid_pattern:hover:nth-of-type(5n + 1) ~ img {
+  left: 0px;
+}
+.grid_pattern:hover:nth-of-type(1n + 1) ~ .zoomEffect {
+  top: 0px;
+}
+.grid_pattern:hover:nth-of-type(5n + 2) ~ img {
+  left: -50px;
+}
+.grid_pattern:hover:nth-of-type(1n + 6) ~ .zoomEffect {
+  top: -50px;
+}
+.grid_pattern:hover:nth-of-type(5n + 3) ~ img {
+  left: -100px;
+}
+.grid_pattern:hover:nth-of-type(1n + 11) ~ .zoomEffect {
+  top: -100px;
+}
+.grid_pattern:hover:nth-of-type(5n + 4) ~ img {
+  left: -150px;
+}
+.grid_pattern:hover:nth-of-type(1n + 16) ~ .zoomEffect {
+  top: -150px;
+}
+.grid_pattern:hover:nth-of-type(5n + 5) ~ img {
+  left: -200px;
+}
+.grid_pattern:hover:nth-of-type(1n + 21) ~ .zoomEffect {
+  top: -200px;
+}
+
+.zoomEffect {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%;
+  z-index: -1;
+}
+
+.grid_pattern {
+  background-color: blue;
+}
+.grid_pattern:nth-of-type(2n) {
+  background-color: transparent;
+}
+

@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  background-color: rgba(7, 9, 40, 1);
+}
+
+body {
+  margin: 0;
+  font-family:'NeueMontreal-Bold', 'NeueMontreal-Light', 'NeueMontreal-Medium', 'NeueMontreal-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 12, 0,5);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, p { font-family: 'NeueMontreal-Regular' }
+
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url(assets/NeueMontreal/NeueMontreal-Bold.otf) format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url(assets/NeueMontreal/NeueMontreal-Light.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Medium';
+  src: url(assets/NeueMontreal/NeueMontreal-Medium.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url(assets/NeueMontreal/NeueMontreal-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
